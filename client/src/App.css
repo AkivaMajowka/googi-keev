@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Asap:400,500i");
+* {
+  font-family: "Asap", sans-serif;
+}
+
+.elements {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+  margin-left: 26%;
+}
+
+.box {
+  padding: 5px;
+  margin: 10px;
+  width: 195px;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+h5 {
+  text-transform: capitalize;
+  margin: 10%;
+}
+
+p {
+  margin-left: 10%;
+  margin-right: 5%;
+}
+
+input {
+  margin-right: 10px;
+}
+
+#todo-title {
+  width: 50%;
+  height: 35px;
+  margin: 0px 0 10px 10%;
+}
+
+
+.modals {
+  display: flex;
+  margin-left: 9%;
+}
+
+.customButton {
+  background-color: transparent;
+  height: 21px;
+  border-radius: 10px;
+  border: solid 1px lightblue;
+  float: right;
+}
+
+.checkedtodo {
+  text-decoration: line-through;
+    color: #ccc; 
+  }
+
+/*delete button*/
+#delete {
+  margin-right: 1px;
+  width: 12px;
+  height: 12px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  transform: rotate(45deg)
+}
+
+#delete:before, #delete:after {
+  background: rgb(17, 160, 141);
+  content: "";
+  position: absolute;
+}
+
+#delete:before {
+  height: 2px;
+  top: 50%;
+  right: 0;
+  left: 0;
+  margin-top: -1px;
+}
+
+#delete:after {
+  width: 2px;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  margin-left: -1px;
+  
+}
+
+#delete:hover::after {
+  background: red
+}
+
+#delete:hover::before {
+  background: red
+}
+
+#deleteDiv:hover {
+  background-color: lightblue;
+  transition-delay: 0.03s;
+}
+
+#deleteDiv {
+  border: 1.5px solid lightgray;
+  height: 16px;
+  border-radius: 5px;
+  transition: 0s background-color;
+}
+
+/*modal todos*/
