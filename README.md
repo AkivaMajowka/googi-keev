@@ -1,4 +1,4 @@
-# googi-keev
+# Googi-Keev
 
 Dependencies: "npm install" in main file and in client
 
